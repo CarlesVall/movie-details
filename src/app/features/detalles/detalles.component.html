@@ -1,0 +1,14 @@
+<section class="detalles" *ngIf="movieSelected; else empty">
+    <h1>{{ movieSelected.title }}</h1>
+    <div class="detalles-cuerpo">
+        <p><strong>Fecha de lanzamiento:</strong> {{ movieSelected.date }}</p>
+        <p><strong>Idioma original:</strong> {{ movieSelected.language }} </p>
+        <p><strong>Título original:</strong> <br/>{{ movieSelected.original_title }} </p>
+        <p><strong>Géneros:</strong> {{ movieSelected.genres.length > 0 ? movieSelected.genres.join(', ') : 'Géneros no disponibles' }}</p>
+        <p><strong>Descripción: <br></strong> {{ movieSelected.overview ? movieSelected.overview : 'Sin descripción disponible' }}</p>
+    </div>
+</section>
+
+<ng-template #empty>
+    <p class="empty">Selecciona una película para ver los detalles.</p>
+</ng-template>

@@ -1,0 +1,24 @@
+<section class="lista">
+    <div class="search-container"> 
+        <input 
+        type="text" 
+        class="search"
+        #searchInput
+        placeholder="Busca por título"
+        autocomplete="off"
+        />
+        <button (click)="onSearch(searchInput.value)" class="search-button"></button>
+    </div>   
+    
+    <ng-container *ngIf="(movies$ | async) as movies; else empty">
+        <ul *ngIf="movies.length > 0; else empty">
+            <li *ngFor="let m of movies; trackBy: trackById" (click)="onSelect(m)">
+            <button class="title">{{ m.title }}</button>
+            </li>
+        </ul>
+    </ng-container>
+
+    <ng-template #empty>
+        <p class="empty">Realiza una búsqueda.</p>
+    </ng-template>
+</section>
