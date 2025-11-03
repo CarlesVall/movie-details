@@ -1,5 +1,14 @@
 # Ejercicio Izertis
 
+## Iniciar Proyecto
+Descargar repositorio y en el editor ejecutar los siguientes comandos en la terminal:
+```bash
+npm install
+ng serve --open
+```
+
+
+
 This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.2.18.
 
 ## Development server
