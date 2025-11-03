@@ -1,10 +1,10 @@
 # Ejercicio Izertis
 
 ## Iniciar Proyecto
-Descargar repositorio y en el editor ejecutar los siguientes comandos en la terminal:
+Descargar repositorio y en el editor ejecutar los siguientes comandos en la terminal (CMD):
 ```bash
 npm install
-ng serve --open
+npx ng serve --open
 ```
 
 
