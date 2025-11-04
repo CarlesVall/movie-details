@@ -9,7 +9,6 @@ import { map } from "rxjs";
 export class TmdbService {
     private http = inject(HttpClient);
     private baseUrl = tmdb.baseUrl;
-    private readToken = tmdb.readToken;
 
     searchMovies(query: string, page: number = 1) {
         if(!query || query.trim() === '') {

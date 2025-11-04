@@ -11,7 +11,7 @@ app-root {
 app-root main {
     height: 100%;
     padding: 0;
-    background-image: url('assets/images/sala-cine-2.jpg');
+    background-image: url('assets/images/cinema-room-2.jpg');
     background-size: cover;
     background-position: center;
 }

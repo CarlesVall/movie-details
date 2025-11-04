@@ -29,8 +29,7 @@
 <main class="main">
   <div class="content">
     <details-component [movieSelected]="selected"></details-component>
-    <busqueda-component (movieSelected)="onMovieSelected($event)"></busqueda-component>
+    <search-component (movieSelected)="onMovieSelected($event)"></search-component>
   </div>
 </main>
 
-<router-outlet />

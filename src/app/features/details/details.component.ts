@@ -4,8 +4,8 @@ import { Movie } from '@models/movie.model';
 
 @Component({
   selector: 'details-component',
-  templateUrl: './detalles.component.html',
-  styleUrls: ['./detalles.component.css'],
+  templateUrl: './details.component.html',
+  styleUrls: ['./details.component.css'],
   imports: [CommonModule]
 })
 export class DetailsComponent {

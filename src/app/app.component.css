@@ -95,22 +95,23 @@
     padding: 6rem;
     display: grid;
     grid-template-columns: 3fr 1fr;
-    align-items: start;
+    align-items: stretch;
     height: 350px;
     max-width: 720px;
   }
 
+  .content > * {
+    height: 100%;
+    overflow: auto;
+  }
   .content busqueda-component {
     display: flex;
-    height: 100%;
     flex-direction: column;
     border-radius: .5rem;
     overflow: hidden;
-    
   }
 
   .content details-component {
-    height: 100%;
     margin-right: 2rem;
     background-color: rgb(249, 249, 249, 0.6);
     border-radius: 8px;

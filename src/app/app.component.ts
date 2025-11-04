@@ -1,12 +1,11 @@
 import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
-import { DetailsComponent } from './features/detalles/detalles.component';
-import { BusquedaComponent } from './features/busqueda/busqueda.component';
+import { DetailsComponent } from './features/details/details.component';
+import { SearchComponent } from './features/search/search.component';
 import { Movie } from '@models/movie.model';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, DetailsComponent, BusquedaComponent],
+  imports: [DetailsComponent, SearchComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })

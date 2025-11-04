@@ -45,15 +45,10 @@ li {
     background-color: #c9c9c9;
 }
 
-.search-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
 
 .search {
-    width: 80%;
-    padding: 2px 4px;
+    width: 90%;
+    padding: 2px 4px 2px 4px;
     border-radius: 8px;
     font-size: 1rem;
     border: 1px solid #ccc;
@@ -69,13 +64,6 @@ li {
     color: #0e0707;
 }
 
-.search-button {
-    height: 16px;
-    width: 16px;
-    border-radius: 4px;
-    background-color: #a1a1a1;
-    color: #fff;
-}
 .search-button:hover {
     background-color: #646464;
     transform: scale(1.1);

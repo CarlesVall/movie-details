@@ -3,11 +3,11 @@
         <input 
         type="text" 
         class="search"
+        [formControl]="query"
         #searchInput
         placeholder="Busca por título"
         autocomplete="off"
         />
-        <button (click)="onSearch(searchInput.value)" class="search-button"></button>
     </div>   
     
     <ng-container *ngIf="(movies$ | async) as movies; else empty">
