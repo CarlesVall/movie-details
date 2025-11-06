@@ -1,13 +1,13 @@
-.detalles {
+.details {
     height: 20em;
     padding: 0px 20px 0px 20px;
     
 }
-.detalles h1 {
+.details h1 {
     margin-top: 10px;
     margin-bottom: 8px;
 }
-.detalles-cuerpo {
+.details-body {
     border: 2px solid #7e7e7e;
     padding: 0px 0px 10px 10px;
     overflow-y: scroll;

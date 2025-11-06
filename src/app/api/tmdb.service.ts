@@ -1,6 +1,5 @@
 import { Injectable, inject } from "@angular/core";
 import { HttpClient, HttpParams } from "@angular/common/http";
-import { tmdb } from "@environments/environment";
 import { map } from "rxjs";
 
 @Injectable({
@@ -8,7 +7,6 @@ import { map } from "rxjs";
 })
 export class TmdbService {
     private http = inject(HttpClient);
-    private baseUrl = tmdb.baseUrl;
 
     searchMovies(query: string, page: number = 1) {
         if(!query || query.trim() === '') {

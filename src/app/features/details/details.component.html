@@ -1,6 +1,6 @@
-<section class="detalles" *ngIf="movieSelected; else empty">
+<section class="details" *ngIf="movieSelected; else empty">
     <h1>{{ movieSelected.title }}</h1>
-    <div class="detalles-cuerpo">
+    <div class="details-body">
         <p><strong>Fecha de lanzamiento:</strong> {{ movieSelected.date }}</p>
         <p><strong>Idioma original:</strong> {{ movieSelected.language }} </p>
         <p><strong>Título original:</strong> <br/>{{ movieSelected.original_title }} </p>
