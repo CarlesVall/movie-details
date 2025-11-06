@@ -1,6 +1,6 @@
 import { ApplicationConfig, provideZoneChangeDetection } from '@angular/core';
 import { provideHttpClient, withInterceptors } from '@angular/common/http';
-import { tmdbAuthInterceptor } from '@api/tmdb-auth.inteceptor';
+import { tmdbAuthInterceptor } from '@api/tmdb-auth.interceptor';
 
 import { routes } from './app.routes';
 
