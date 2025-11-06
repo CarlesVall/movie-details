@@ -14,7 +14,7 @@ export class TmdbService {
         if(!query || query.trim() === '') {
             throw new Error('Query parameter is required');
         }
-        const url = `${this.baseUrl}/search/movie`;
+        const url = `/search/movie`;
         let params = new HttpParams()
             .set('language', 'es-ES')
             .set('query', query)
@@ -32,7 +32,7 @@ export class TmdbService {
         if (!movieId) {
             throw new Error('Movie ID is required');
         }
-        const url = `${this.baseUrl}/movie/${movieId}`;
+        const url = `/movie/${movieId}`;
         let params = new HttpParams()
             .set('language', 'es-ES');
         const response = this.http.get<any>(url, {
